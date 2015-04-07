@@ -1,10 +1,10 @@
 var a = prompt('Enter the first number.');
-a = parseInt(a);
-var b = prompt('Enter an arithmetic operator ( + , - , * or / ).');
+a = parseFloat(a);
+var o = prompt('Enter an arithmetic operator ( + , - , * or / ).');
 var c = prompt('Please enter the second number.');
-c = parseInt(c);
+c = parseFloat(c);
 var result;
-switch (b) {
+switch (o) {
     case '+':
       result = a + c;
       break;
@@ -17,7 +17,5 @@ switch (b) {
     case '/':
       result = a / c;
       break;
-    default:
-      result = undefined;
 }
-console.log('The result of a', b, 'b is', result);
+console.log('The result of a', o, 'b is', result);
