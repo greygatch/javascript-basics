@@ -1,12 +1,12 @@
 function numberPlay (str) {
 
-    var num = inp.split(":");
+    var num = str.split(":");
     var spex = {};
 
     spex.sum = (num.map(function(e){return parseInt(e)})).reduce(function(a, b, i, e) {return a + b});
-    spex.products = int.reduce(function(a, b, i, e) {return a * b});
-    spex.avg = sum / int.length;
-    spex.stdDev = Math.sqrt((int.map(function(e){return (e * e) - avg;}).reduce(function(a, b, i, e) {return a + b})) / 2);
+    spex.products = num.reduce(function(a, b, i, e) {return a * b});
+    spex.avg = spex.sum / num.length;
+    spex.stdDev = Math.sqrt((num.map(function(e){return (e * e) - spex.avg;}).reduce(function(a, b, i, e) {return a + b})) / 2);
 
     return spex;
 }
