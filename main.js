@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function numberPlay (str) {
 
     var num = str.split(":");
@@ -13,3 +14,15 @@ function numberPlay (str) {
 
 var inp = prompt("Give me a number. (ex: n:n:n )");
 numberPlay(inp);
+=======
+var a = parseInt(prompt("gimme an int, dawg: "));
+var b = parseInt(prompt("gimme an another int: "));
+var c = prompt("do what with em? (+, -, *, /)");
+
+if (c === "+" || c === "-"){
+  c === "+" ? alert(a + b) : alert (a - c);
+}
+else if (c === "*" || c === "/") {
+  c === "*" ? alert(a * b) : alert(a / b);
+}
+>>>>>>> a00e84dbc6c1f43ede0d9b8642faf24fc8910259
