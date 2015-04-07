@@ -20,4 +20,4 @@ switch (b) {
     default:
       result = undefined;
 }
-console.log('The result of a', c, 'and b is', result);
+console.log('The result of a', b, 'b is', result);
